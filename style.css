@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.companyname {
+    position: absolute;
+    top: 75vh;
+    left: 2vw;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10vh;
+    font-weight: 100;
+    color: #fff;
+    text-indent: 50px;
+}
+
+header {
+    position:absolute;
+    background-color: transparent;
+    background-size: cover;
+    color: #fff;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+header .logo img {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+    height: 12vh;
+    transition: 0.3s;
+}
+
+header .logo img:hover {
+    height: 15vh;
+}
+
+main {
+    height: 300vh;
+}
+
+nav {
+    position: absolute;
+    left: 50vw;
+    top: 10vh;
+    transform: translate(-50%, -50%);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #7bb0f62f;
+    border-radius: 5px;
+}
+
+.text{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15pt;
+    color: #282828;
+}
+
+.welcome {
+    background-image: url(images/company.jpg);
+    height: 100vh;
+    width: auto;
+    word-break: normal;
+}
+
+.welcomemessage {
+    position: absolute;
+    top: 45vh;
+    left: 5vw;
+    width: 30vw;
+}
+
+.welcomemessage p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: #fff;
+}
+
+/*************************SLİDER************************/
+.slider-container {
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    width: calc(100% / 3);
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 3;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+/*************************SLİDER END*********************/
+
+@media (max-width: 768px) {}
+
