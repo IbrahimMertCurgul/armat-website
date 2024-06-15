@@ -1,0 +1,1 @@
+This is going to be the company website for Armat Ofset & Ambalaj. We aim for the customer to get information about us like our products, partners etc.. So i intent to keep the site simple and user friendly.
