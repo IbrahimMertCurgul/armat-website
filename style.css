@@ -10,20 +10,6 @@ body {
     padding: 0;
 }
 
-.companyname {
-    position: absolute;
-    top: 75vh;
-    left: 2vw;
-    width: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 4lvw;
-    font-weight: 100;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.53);
-    color: #fff;
-    text-indent: 50px;
-    user-select: none;
-}
-
 .footer {
     background-color: rgb(113, 113, 113);
     background-image: url(images/company.jpg);
@@ -59,15 +45,17 @@ header {
     height: 20vh;
 }
 
-header .logo img {
+.logo {
     position: absolute;
-    top: 5vh;
-    left: 5vw;
-    height: 12vh;
-    transition: 0.3s;
+    top: 30vh;
+    left: 25vh;
 }
 
-header .logo img:hover {
+.logo img{
+    width: 30vw;
+}
+
+.logo:hover {
     height: 15vh;
 }
 
@@ -79,7 +67,6 @@ nav {
     position: absolute;
     left: 50vw;
     top: 10vh;
-    margin-left: 8vw;
     transform: translate(-50%, -50%);
 }
 
@@ -128,10 +115,33 @@ nav ul li a:hover {
 
 }
 
+.welcomecontact{
+    
+}
+
+.Welcomeheader {
+    position: absolute;
+    top: 32vh;
+    left: 48vw;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3lvw;
+    font-weight: 100;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.53);
+    color: #fff;
+    text-indent: 50px;
+    user-select: none;
+}
+
 .welcomemessage {
     position: absolute;
     top: 40vh;
-    left: 8vw;
+    left: 50vw;
+    text-shadow:
+    -1px -1px 0 #000000cd,
+    1px -1px 0 #000000cd,
+    -1px 1px 0 #000000cd,
+    1px 1px 0 #000000cd;
     width: 40vw;
 }
 
