@@ -12,7 +12,7 @@ body {
 
 .footer {
     background-color: rgb(113, 113, 113);
-    background-image: url(images/company.jpg);
+    background-image: url(images/makine.jpg);
     background-position: center;
     background-blend-mode: multiply;
     height: 30vh;
@@ -92,8 +92,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #7bb0f62f;
+    background-color: #8dbec42f;
     border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+td {
+    width: 33.33%;
+    border: 1px solid white;
+    text-align: center;
 }
 
 .text {
@@ -106,7 +117,7 @@ nav ul li a:hover {
 .welcome {
     justify-content: center;
     align-items: center;
-    background-image: url(images/backgroundy.png);
+    background-image: url(images/building.jpg);
     background-position: bottom;
     background-size: cover;
     transition: 1000ms linear;

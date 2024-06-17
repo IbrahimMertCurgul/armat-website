@@ -22,8 +22,7 @@
             </nav>
         </center>
     </header>
-    <div class="welcome">
-        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+    <div class="welcome"> 
         <div class="Welcomeheader">Biz Kimiz?</div>
         <div class="welcomemessage">
             <p>&nbsp; Armat Ofset olarak sektördeki uzmanlığımız ve titiz işçiliğimizle, firmaların ihtiyaç duyduğu her
@@ -77,7 +76,7 @@
                 ve isteklerine göre özel olarak tasarlanmaktadır.</div>
         </center>
         <script src="script.js"></script>
-        <div class="text" style="margin-top: 20vh; margin-left: 20vh;" id="references">
+        <div class="text" style="margin-top: 18vh; margin-left: 20vh;" id="references">
             <h2>İş Ortaklarımız</h2>
         </div>
         <center>
@@ -91,13 +90,21 @@
             </div>
         </center>
         <div class="footer">
-            <div class="grid-container">
-                <div class="grid-item">Armat Ofset & Ambalaj @2024</div>
-                <div class="grid-item"><img src="images/armatlogo.png" alt="Armat Ofset & Ambalaj" style="width: 300px; margin-top: 10px;">
-                </div>
-                <div class="grid-item">a</div>
-            </div>
+            <table>
+                <tr>
+                    <td><div class="text" style="color: whitesmoke; margin-top: 30%;" id="yearmark"></div></td>
+                    <td><img src="images/armatlogo.png" style="width: 50%;" alt="Armat Ofset & Ambalaj"></td>
+                    <td>Cell 3</td>
+                </tr>
+            </table>
         </div>
+
+        <script>
+            // Get the current year
+            const currentYear = new Date().getFullYear();
+            // Set the current year to the specific HTML element
+            document.getElementById('yearmark').textContent = "Armat Ofset & Ambalaj Aş. " + currentYear;
+        </script>
     </main>
 </body>
 
