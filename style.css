@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    justify-content: center;
+    align-items: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -14,14 +16,42 @@ body {
     left: 2vw;
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10vh;
+    font-size: 4lvw;
     font-weight: 100;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.53);
     color: #fff;
     text-indent: 50px;
+    user-select: none;
+}
+
+.footer {
+    background-color: rgb(113, 113, 113);
+    background-image: url(images/company.jpg);
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 30vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    user-select: none;
+}
+
+.grid-container img {
+    width: 100%;
 }
 
 header {
-    position:absolute;
+    position: absolute;
     background-color: transparent;
     background-size: cover;
     color: #fff;
@@ -42,13 +72,14 @@ header .logo img:hover {
 }
 
 main {
-    height: 300vh;
+    height: auto;
 }
 
 nav {
     position: absolute;
     left: 50vw;
     top: 10vh;
+    margin-left: 8vw;
     transform: translate(-50%, -50%);
 }
 
@@ -61,13 +92,16 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    width: 10vw;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
+    transition: 200ms linear;
+    user-select: none;
 }
 
 nav ul li a:hover {
@@ -75,7 +109,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.text{
+.text {
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15pt;
@@ -83,22 +117,29 @@ nav ul li a:hover {
 }
 
 .welcome {
-    background-image: url(images/company.jpg);
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/backgroundy.png);
+    background-position: bottom;
+    background-size: cover;
+    transition: 1000ms linear;
     height: 100vh;
     width: auto;
-    word-break: normal;
+
 }
 
 .welcomemessage {
     position: absolute;
-    top: 45vh;
-    left: 5vw;
-    width: 30vw;
+    top: 40vh;
+    left: 8vw;
+    width: 40vw;
 }
 
 .welcomemessage p {
+    word-break: normal;
+    text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
+    font-size: 1.2lvw;
     color: #fff;
 }
 
@@ -124,6 +165,7 @@ nav ul li a:hover {
 .slider img {
     width: calc(100% / 3);
     display: block;
+    user-select: none;
 }
 
 button {
@@ -140,18 +182,18 @@ button {
 }
 
 button.prev {
-    left: 10px;
+    left: 0px;
 }
 
 button.next {
-    right: 10px;
+    right: 0px;
 }
 
 button:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
+
 /*************************SLİDER END*********************/
 
 @media (max-width: 768px) {}
-
