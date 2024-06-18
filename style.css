@@ -53,10 +53,16 @@ header {
 
 .logo img{
     width: 30vw;
+    transition: 500ms linear;
 }
 
-.logo:hover {
-    height: 15vh;
+@keyframes logoanim {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.logo.in-view{
+    animation: logoanim 1000ms ease-in;
 }
 
 main {
@@ -68,6 +74,15 @@ nav {
     left: 50vw;
     top: 10vh;
     transform: translate(-50%, -50%);
+}
+
+@keyframes navanim {
+    from {top: 5vh; opacity: 0;}
+    to {top: 10vh; opacity: 1;}
+}
+
+nav.in-view {
+    animation: navanim 500ms ease;
 }
 
 nav ul {
@@ -92,8 +107,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #8dbec42f;
-    border-radius: 5px;
+    background-color: #83c1de2f;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 table {
@@ -103,7 +119,6 @@ table {
 }
 td {
     width: 33.33%;
-    border: 1px solid white;
     text-align: center;
 }
 
@@ -114,10 +129,19 @@ td {
     color: #282828;
 }
 
+@keyframes textanim {
+    from {left: 0vw; opacity: 0;}
+    to {opacity: 1;}
+}
+
+.text.in-view {
+    animation: textanim 300ms ease;
+}
+
 .welcome {
     justify-content: center;
     align-items: center;
-    background-image: url(images/building.jpg);
+    background-image: url(images/company.png);
     background-position: bottom;
     background-size: cover;
     transition: 1000ms linear;
@@ -136,9 +160,9 @@ td {
     left: 48vw;
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3lvw;
+    font-size: 2.8lvw;
     font-weight: 100;
-    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.53);
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.27);
     color: #fff;
     text-indent: 50px;
     user-select: none;
@@ -149,10 +173,10 @@ td {
     top: 40vh;
     left: 50vw;
     text-shadow:
-    -1px -1px 0 #000000cd,
-    1px -1px 0 #000000cd,
-    -1px 1px 0 #000000cd,
-    1px 1px 0 #000000cd;
+    -1px -1px 0 #00000058,
+    1px -1px 0 #00000058,
+    -1px 1px 0 #00000058,
+    1px 1px 0 #00000058;
     width: 40vw;
 }
 
@@ -160,8 +184,26 @@ td {
     word-break: normal;
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.2lvw;
+    font-size: 1.1lvw;
     color: #fff;
+}
+
+@keyframes welhanim {
+    from {left: 55vw; opacity: 0;}
+    to {left: 48vw; opacity: 1;}
+}
+
+@keyframes welpanim {
+    from {left: 70vw; opacity: 0;}
+    to {left: 50vw; opacity: 1;}
+}
+
+.Welcomeheader.in-view{
+    animation: welhanim 500ms ease;
+}
+
+.welcomemessage.in-view{
+    animation: welpanim 500ms ease;
 }
 
 /*************************SLİDER************************/

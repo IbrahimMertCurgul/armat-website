@@ -12,7 +12,7 @@
     <header>
         <!--<div class="logo"><img src="images/armatlogo-bw.png" alt="Armat Ofset"></div>-->
         <center>
-            <nav>
+            <nav class="animate">
                 <ul>
                     <li><a href="#products">Hizmetlerimiz</a></li>
                     <li><a href="#about">Hakkımızda</a></li>
@@ -23,19 +23,19 @@
         </center>
     </header>
     <div class="welcome"> 
-        <div class="Welcomeheader">Biz Kimiz?</div>
-        <div class="welcomemessage">
+        <div class="Welcomeheader animate">Biz Kimiz?</div>
+        <div class="welcomemessage animate">
             <p>&nbsp; Armat Ofset olarak sektördeki uzmanlığımız ve titiz işçiliğimizle, firmaların ihtiyaç duyduğu her
                 türlü baskı
                 çözümünü sunmaktayız. <br> <br> &nbsp; Müşterilerimize, yüksek kaliteli materyaller ve yenilikçi
                 tasarımlar ile en iyi hizmeti sağlamayı taahhüt ediyoruz. Her projede, müşteri memnuniyetini ön planda
                 tutarak, beklentileri aşan sonuçlar elde etmeyi hedefliyoruz.</p>
         </div>
-        <div class="logo"><img src="images/armatlogo-bw.png" alt="Armat Ofset"></div>
+        <div class="logo animate"><img src="images/armatlogo.png" alt="Armat Ofset"></div>
         <!--<div class="companyname">Armat Ofset & Ambalaj</div>-->
     </div>
     <main>
-        <div class="text" style="top: 15vh; left: 15vw; height: 30vh; width: 30vw;">
+        <div class="text animate" style="top: 15vh; left: 15vw; height: 30vh; width: 30vw;">
             <h2 style="font-size: 2lvw; text-align: left;">Ürün Kalitesinde Mükemmellik</h2>Armat Ofset, her zaman
             en yüksek kalitede ürünler sunmayı ilke edinmiştir. <br><br> Kalite kontrol süreçlerimiz, her aşamada
             titizlikle
@@ -49,7 +49,7 @@
         <div style="position: absolute; top: 140vh; left: 45vw;"><img src="images/kutu.png" style="height: 50vh;"></div>
 
         <center>
-            <h1 style="margin-top: 500px;" id="products">Hizmetlerimiz</h1>
+            <h1 style="margin-top: 70vh;" id="products">Hizmetlerimiz</h1>
         </center>
 
         <center>
@@ -68,15 +68,15 @@
                 </div>
                 <button class="next">&#10095;</button>
             </div>
-            <div class="text"
+            <div class="text animate"
                 style="width: 50%; text-align: center; margin-top: 5vh; background-color: rgba(227, 227, 227, 0.34); padding: 2vh; border-radius: 2vh;">
                 Müşterilerimize sunduğumuz
                 ürünlerin tam anlamıyla özelleştirilebilir
                 olmasını sağlamaktayız. Her ürün, müşterilerimizin ihtiyaçlarına
                 ve isteklerine göre özel olarak tasarlanmaktadır.</div>
         </center>
-        <script src="script.js"></script>
-        <div class="text" style="margin-top: 18vh; margin-left: 20vh;" id="references">
+        
+        <div class="text animate" style="margin-top: 18vh; margin-left: 20vh;" id="references">
             <h2>İş Ortaklarımız</h2>
         </div>
         <center>
@@ -93,7 +93,7 @@
             <table>
                 <tr>
                     <td><div class="text" style="color: whitesmoke; margin-top: 30%;" id="yearmark"></div></td>
-                    <td><img src="images/armatlogo.png" style="width: 50%;" alt="Armat Ofset & Ambalaj"></td>
+                    <td><img src="images/armatlogo-bw.png" style="width: 40%;" alt="Armat Ofset & Ambalaj"></td>
                     <td>Cell 3</td>
                 </tr>
             </table>
@@ -105,6 +105,8 @@
             // Set the current year to the specific HTML element
             document.getElementById('yearmark').textContent = "Armat Ofset & Ambalaj Aş. " + currentYear;
         </script>
+        
+        <script src="script.js"></script>
     </main>
 </body>
 
