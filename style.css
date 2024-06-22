@@ -62,12 +62,67 @@ header {
     border: 3px solid rgba(255, 255, 255, 0.9);
     border-radius: 4px;
     transition: 200ms linear;
+    z-index: 0;
 }
 
 .show-popup:hover{
     background-color: #ffffff3e;
 }
 
+.popup-container {
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    width: 35vw;
+    height: 50vh;
+    background: rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.251);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .popup-container.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .4s ease;
+  }
+
+  .popup-container .popup-box {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 5px solid rgba(128, 119, 108, 0.329);
+    border-radius: 1vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 30px;
+    transform: scale(0);
+  }
+
+  .popup-container.active .popup-box {
+    transform: scale(1);
+    transition: .4s ease;
+    transition-delay: .25s;
+  }
+
+  .close-btn {
+    position: relative;
+    top: 0;
+    margin-top: 6vh;
+    width: 30%;
+    height: 45px;
+    background: #767676;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 18px;
+    color: #f2f2f2;
+    font-weight: 500;
+  }
 /**************************** İLETİŞİM ***********************************/
 
 .logo {
