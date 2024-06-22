@@ -1,6 +1,21 @@
 html {
     scroll-behavior: smooth;
 }
+  /* Track */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
 
 body {
     justify-content: center;
@@ -57,8 +72,8 @@ header {
 .show-popup {
     position: relative;
     top: 5vh;
-    width: 8vw;
-    height: 5vh;
+    width: 160px;
+    height: 6vh;
     border: 3px solid rgba(255, 255, 255, 0.9);
     border-radius: 4px;
     transition: 200ms linear;
@@ -111,8 +126,8 @@ header {
     position: relative;
     top: 0;
     margin-top: 6vh;
-    width: 30%;
-    height: 45px;
+    width: 6vw;
+    height: 5vh;
     background: #767676;
     border-radius: 6px;
     border: none;
