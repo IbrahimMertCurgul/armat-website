@@ -14,8 +14,16 @@ body {
     background-color: rgb(113, 113, 113);
     background-image: url(images/makine.jpg);
     background-position: center;
+    background-size: cover;
     background-blend-mode: multiply;
     height: 30vh;
+}
+
+.footerelement{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-top: 2vh;
 }
 
 .grid-container {
@@ -45,7 +53,8 @@ header {
     height: 20vh;
 }
 
-.iletisim {
+/**************************** İLETİŞİM ***********************************/
+.show-popup {
     position: relative;
     top: 5vh;
     width: 8vw;
@@ -55,9 +64,11 @@ header {
     transition: 200ms linear;
 }
 
-.iletisim:hover{
+.show-popup:hover{
     background-color: #ffffff3e;
 }
+
+/**************************** İLETİŞİM ***********************************/
 
 .logo {
     position: absolute;
@@ -137,6 +148,59 @@ nav ul li a:hover {
     border-radius: 10px;
     padding: 10px;
 }
+
+/*************************SLİDER************************/
+.slider-container {
+    position: relative;
+    margin-top: 50px;
+    width: 80%;
+    max-width: 80%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider img {
+    width: calc(100% / 3);
+    display: block;
+    user-select: none;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    z-index: 3;
+}
+
+button.prev {
+    left: 0px;
+}
+
+button.next {
+    right: 0px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+/*************************SLİDER END*********************/
 
 table {
     width: 100%;
@@ -249,57 +313,5 @@ td {
     animation: welpanim 500ms ease;
 }
 
-/*************************SLİDER************************/
-.slider-container {
-    position: relative;
-    margin-top: 50px;
-    width: 80%;
-    max-width: 80%;
-    overflow: hidden;
-}
-
-.slider-wrapper {
-    overflow: hidden;
-    width: 100%;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.slider img {
-    width: calc(100% / 3);
-    display: block;
-    user-select: none;
-}
-
-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    z-index: 3;
-}
-
-button.prev {
-    left: 0px;
-}
-
-button.next {
-    right: 0px;
-}
-
-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-}
-
-/*************************SLİDER END*********************/
 
 @media (max-width: 768px) {}
