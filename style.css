@@ -45,23 +45,42 @@ header {
     height: 20vh;
 }
 
+.iletisim {
+    position: relative;
+    top: 5vh;
+    width: 8vw;
+    height: 5vh;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    transition: 200ms linear;
+}
+
+.iletisim:hover{
+    background-color: #ffffff3e;
+}
+
 .logo {
     position: absolute;
     top: 30vh;
     left: 25vh;
 }
 
-.logo img{
+.logo img {
     width: 30vw;
     transition: 500ms linear;
 }
 
 @keyframes logoanim {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.logo.in-view{
+.logo.in-view {
     animation: logoanim 1000ms ease-in;
 }
 
@@ -77,8 +96,15 @@ nav {
 }
 
 @keyframes navanim {
-    from {top: 5vh; opacity: 0;}
-    to {top: 10vh; opacity: 1;}
+    from {
+        top: 5vh;
+        opacity: 0;
+    }
+
+    to {
+        top: 10vh;
+        opacity: 1;
+    }
 }
 
 nav.in-view {
@@ -117,6 +143,7 @@ table {
     height: 100%;
     border-collapse: collapse;
 }
+
 td {
     width: 33.33%;
     text-align: center;
@@ -130,8 +157,14 @@ td {
 }
 
 @keyframes textanim {
-    from {left: 0vw; opacity: 0;}
-    to {opacity: 1;}
+    from {
+        left: 0vw;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .text.in-view {
@@ -148,10 +181,6 @@ td {
     height: 100vh;
     width: auto;
 
-}
-
-.welcomecontact{
-    
 }
 
 .Welcomeheader {
@@ -173,10 +202,10 @@ td {
     top: 40vh;
     left: 50vw;
     text-shadow:
-    -1px -1px 0 #00000058,
-    1px -1px 0 #00000058,
-    -1px 1px 0 #00000058,
-    1px 1px 0 #00000058;
+        -1px -1px 0 #00000058,
+        1px -1px 0 #00000058,
+        -1px 1px 0 #00000058,
+        1px 1px 0 #00000058;
     width: 40vw;
 }
 
@@ -189,20 +218,34 @@ td {
 }
 
 @keyframes welhanim {
-    from {left: 55vw; opacity: 0;}
-    to {left: 48vw; opacity: 1;}
+    from {
+        left: 55vw;
+        opacity: 0;
+    }
+
+    to {
+        left: 48vw;
+        opacity: 1;
+    }
 }
 
 @keyframes welpanim {
-    from {left: 70vw; opacity: 0;}
-    to {left: 50vw; opacity: 1;}
+    from {
+        left: 70vw;
+        opacity: 0;
+    }
+
+    to {
+        left: 50vw;
+        opacity: 1;
+    }
 }
 
-.Welcomeheader.in-view{
+.Welcomeheader.in-view {
     animation: welhanim 500ms ease;
 }
 
-.welcomemessage.in-view{
+.welcomemessage.in-view {
     animation: welpanim 500ms ease;
 }
 
