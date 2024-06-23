@@ -43,6 +43,18 @@ body {
     display: none;
 }
 
+.butonmobile {
+    position: relative;
+    top: 5vh;
+    width: 160px;
+    height: 6vh;
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    transition: 200ms linear;
+    z-index: 0;
+    display: none;
+}
+
 .footer {
     background-color: rgb(113, 113, 113);
     background-image: url(images/makine.jpg);
@@ -408,11 +420,32 @@ td {
     width: 40vw;
 }
 
+.welcomemessagemobile {
+    position: absolute;
+    top: 42vh;
+    left: 10vw;
+    text-shadow:
+        -1px -1px 0 #00000058,
+        1px -1px 0 #00000058,
+        -1px 1px 0 #00000058,
+        1px 1px 0 #00000058;
+    width: 85vw;
+    display: none;
+}
+
 .welcomemessage p {
     word-break: normal;
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.1lvw;
+    color: #fff;
+}
+
+.welcomemessagemobile p {
+    word-break: normal;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13pt;
     color: #fff;
 }
 
@@ -457,6 +490,9 @@ td {
     .baslikmobile{
         display: block;
     }
+    .butonmobile{
+        display: block;
+    }
     .logo{
         display: none;
     }
@@ -467,6 +503,12 @@ td {
         display: none;
     }
     .Welcomeheadermobile{
+        display: block;
+    }
+    .welcomemessage{
+        display: none;
+    }
+    .welcomemessagemobile{
         display: block;
     }
 }
