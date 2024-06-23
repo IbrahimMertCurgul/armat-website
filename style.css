@@ -1,21 +1,22 @@
 html {
     scroll-behavior: smooth;
 }
-  /* Track */
+
+/* Track */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
+}
+
+/* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
+    background: #f1f1f1;
+}
+
+/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 10px;
-  }
+}
 
 body {
     justify-content: center;
@@ -33,6 +34,7 @@ body {
     justify-content: space-between;
     height: 20vh;
 }
+
 .baslikmobile {
     position: absolute;
     background-color: black;
@@ -64,7 +66,7 @@ body {
     height: 30vh;
 }
 
-.footerelement{
+.footerelement {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
@@ -101,7 +103,7 @@ body {
     z-index: 0;
 }
 
-.show-popup:hover{
+.show-popup:hover {
     background-color: #ffffff3e;
 }
 
@@ -118,15 +120,15 @@ body {
     align-items: center;
     opacity: 0;
     pointer-events: none;
-  }
+}
 
-  .popup-container.active {
+.popup-container.active {
     opacity: 1;
     pointer-events: auto;
     transition: .4s ease;
-  }
+}
 
-  .popup-container .popup-box {
+.popup-container .popup-box {
     width: 100%;
     height: 100%;
     background: #ffffff;
@@ -135,15 +137,15 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     padding: 30px;
     transform: scale(0);
-  }
+}
 
-  .popup-container.active .popup-box {
+.popup-container.active .popup-box {
     transform: scale(1);
     transition: .4s ease;
     transition-delay: .25s;
-  }
+}
 
-  .close-btn {
+.close-btn {
     position: relative;
     top: 0;
     margin-top: 6vh;
@@ -158,7 +160,8 @@ body {
     font-size: 18px;
     color: #f2f2f2;
     font-weight: 500;
-  }
+}
+
 /**************************** İLETİŞİM ***********************************/
 
 .logo {
@@ -209,6 +212,7 @@ main {
     top: 10vh;
     transform: translate(-50%, -50%);
 }
+
 .baslikmobile nav {
     position: absolute;
     left: 50vw;
@@ -280,6 +284,15 @@ nav.in-view {
     padding: 10px;
 }
 
+.hizmeth1{
+    margin-top: 70vh;
+}
+
+.hizmeth1mobile{
+    margin-top: 10vh;
+    display: none;
+}
+
 /*************************SLİDER************************/
 .slider-container {
     position: relative;
@@ -332,6 +345,40 @@ button:hover {
 }
 
 /*************************SLİDER END*********************/
+
+.maintext1mobile {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    color: #282828;
+    display: none;
+}
+
+.maintext2mobile {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14pt;
+    color: #282828;
+    display: none;
+}
+
+.prod1 {
+    position: absolute;
+    top: 110vh;
+    left: 65vw;
+}
+
+.prod2 {
+    position: absolute;
+    top: 140vh;
+    left: 45vw;
+}
+
+.prodmobile{
+    position: relative;
+    margin-top: 15vh;
+    display: none;
+}
 
 table {
     width: 100%;
@@ -484,31 +531,71 @@ td {
 
 /****************************************** MOBİL ***********************************************/
 @media only screen and (max-width: 768px) {
-    .baslik{
+    .baslik {
         display: none;
     }
-    .baslikmobile{
+
+    .baslikmobile {
         display: block;
     }
-    .butonmobile{
+
+    .butonmobile {
         display: block;
     }
-    .logo{
+
+    .hizmeth1{
         display: none;
     }
-    .logomobile{
+
+    .hizmeth1mobile{
         display: block;
     }
-    .Welcomeheader{
+
+    .logo {
         display: none;
     }
-    .Welcomeheadermobile{
+
+    .logomobile {
         display: block;
     }
-    .welcomemessage{
+
+    .maintext1mobile{
+        display: block;
+    }
+
+    .maintext2mobile{
+        display: block;
+    }
+
+    .prod1{
         display: none;
     }
-    .welcomemessagemobile{
+
+    .prod2{
+        display: none;
+    }
+
+    .prodmobile{
+        display: block;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .Welcomeheader {
+        display: none;
+    }
+
+    .Welcomeheadermobile {
+        display: block;
+    }
+
+    .welcomemessage {
+        display: none;
+    }
+
+    .welcomemessagemobile {
         display: block;
     }
 }
