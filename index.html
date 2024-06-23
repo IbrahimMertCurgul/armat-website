@@ -19,16 +19,7 @@
             </nav>
         </center>
     </header>
-    <header class="baslikmobile">
-        <center>
-            <nav>
-                <ul>
-                    <li><a href="#products">Hizmetlerimiz</a></li>
-                    <li><a href="#references">İş Ortaklarımız</a></li>
-                </ul>
-            </nav>
-        </center>
-    </header>
+
     <div class="welcome">
 
         <div class="Welcomeheader animate">Biz Kimiz?</div>
@@ -51,8 +42,9 @@
                 tutarak, beklentileri aşan sonuçlar elde etmeyi hedefliyoruz.</p>
 
             <center>
-                <button class="butonmobile"><a href="https://api.whatsapp.com/send?phone=905336167474"><span
-                    style="color: white; position: absolute; top: 25%; left: 50%; font-size: 13pt; -ms-transform: translateY(-50%); transform: translateY(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%);">İletişim</span></a>
+                <button class="butonmobile"><a href="https://api.whatsapp.com/send?phone=905336167474">
+                    <img src="images/WhatsApp.svg" style="height: 100%; float: right; margin-right: 20px;" alt="whatsapp">
+                    <span style="color: white; position: absolute; top: 25%; left: 40%;  font-size: 13pt; transform: translateY(-50%); transform: translateX(-50%);">İletişim</span></a>
                 </button>
             </center>
         </div>
@@ -128,7 +120,7 @@
                 </div>
                 <button class="next">&#10095;</button>
             </div>
-            
+
             <div class="text animate"
                 style="width: 50%; text-align: center; margin-top: 5vh; background-color: rgba(227, 227, 227, 0.34); padding: 2vh; border-radius: 2vh;">
                 Müşterilerimize sunduğumuz
@@ -151,11 +143,11 @@
         </div>
 
         <center>
-            <h1 class="hizmeth1mobile" id="products">İş Ortaklarımız</h1>
+            <h1 class="hizmeth1mobile" id="references">İş Ortaklarımız</h1>
         </center>
 
         <center>
-            <div class="grid-container" style="max-width: 80%; max-height: 800px; margin-bottom: 20vh;">
+            <div class="grid-container">
                 <div class="grid-item"><img src="images/Jumbo_logo.svg"></div>
                 <div class="grid-item"><img src="images/armatlogo.png"></div>
                 <div class="grid-item"><img src="images/armatlogo.png"></div>
@@ -164,6 +156,7 @@
                 <div class="grid-item"><img src="images/armatlogo.png"></div>
             </div>
         </center>
+
         <div class="footer">
             <table>
                 <tr>
@@ -180,11 +173,27 @@
             </table>
         </div>
 
+        <div class="footermobile">
+            <table class="tablemobile">
+                <td>
+                    <tr><center><img src="images/armatlogo.png" style="width: 70%;" alt="Armat Ofset & Ambalaj"></center></tr>
+                    <tr><center><div style="color: whitesmoke;" id="yearmarkm"></div></center></tr>
+                    <tr>
+                        <div class="footerelementmobile">Telefon & Whatsapp: 0533 616 74 74</div>
+                        <div class="footerelementmobile">E-Posta: hamdisahin@armat.com</div>
+                        <div class="footerelementmobile">Adres: 3.MATBAACILAR SİTESİ, Yakuplu, 34524 Beylikdüzü/İstanbul</div>
+                        <div class="footerelementmobile"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.962667003206!2d28.673078176449952!3d41.00419031967592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa0805107fa67%3A0xfe3a5fb120d5ed9a!2s3.MATBAACILAR%20S%C4%B0TES%C4%B0!5e0!3m2!1str!2str!4v1719146501424!5m2!1str!2str" width="auto" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                    </tr>
+                </td>
+            </table>
+        </div>
+
         <script>
             // Get the current year
             const currentYear = new Date().getFullYear();
             // Set the current year to the specific HTML element
             document.getElementById('yearmark').textContent = "Armat Ofset & Ambalaj Aş. " + currentYear;
+            document.getElementById('yearmarkm').textContent = "Armat Ofset & Ambalaj Aş. " + currentYear;
         </script>
 
         <script src="script.js"></script>

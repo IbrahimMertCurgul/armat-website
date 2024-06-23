@@ -47,7 +47,7 @@ body {
 
 .butonmobile {
     position: relative;
-    top: 5vh;
+    top: 10vh;
     width: 160px;
     height: 6vh;
     border: 3px solid rgba(255, 255, 255, 0.9);
@@ -66,6 +66,17 @@ body {
     height: 30vh;
 }
 
+.footermobile {
+    background-color: rgb(113, 113, 113);
+    background-image: url(images/makine.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: auto;
+    padding: 10vw;
+    display: none;
+}
+
 .footerelement {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -73,7 +84,17 @@ body {
     margin-top: 2vh;
 }
 
+.footerelementmobile {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    margin-top: 5vh;
+}
+
 .grid-container {
+    max-width: 80%;
+    max-height: 800px;
+    margin-bottom: 20vh;
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: transparent;
@@ -162,7 +183,7 @@ body {
     font-weight: 500;
 }
 
-/**************************** İLETİŞİM ***********************************/
+/**************************** İLETİŞİM END ***********************************/
 
 .logo {
     position: absolute;
@@ -173,7 +194,7 @@ body {
 .logomobile {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 25vh;
+    top: 15vh;
     left: 50%;
     display: none;
 }
@@ -184,7 +205,7 @@ body {
 }
 
 .logomobile img {
-    width: 60vw;
+    width: 65vw;
     transition: 500ms linear;
 }
 
@@ -284,11 +305,11 @@ nav.in-view {
     padding: 10px;
 }
 
-.hizmeth1{
+.hizmeth1 {
     margin-top: 70vh;
 }
 
-.hizmeth1mobile{
+.hizmeth1mobile {
     margin-top: 10vh;
     display: none;
 }
@@ -297,7 +318,7 @@ nav.in-view {
 .slider-container {
     position: relative;
     margin-top: 50px;
-    width: 80%;
+    width: 70%;
     max-width: 80%;
     overflow: hidden;
 }
@@ -374,7 +395,7 @@ button:hover {
     left: 45vw;
 }
 
-.prodmobile{
+.prodmobile {
     position: relative;
     margin-top: 15vh;
     display: none;
@@ -386,8 +407,20 @@ table {
     border-collapse: collapse;
 }
 
+.tablemobile {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    display: none;
+}
+
 td {
     width: 33.33%;
+    text-align: center;
+}
+
+.tablemobile td {
+    height: 33.33%;
     text-align: center;
 }
 
@@ -442,7 +475,7 @@ td {
 .Welcomeheadermobile {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 40vh;
+    top: 30vh;
     left: 50%;
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -469,7 +502,7 @@ td {
 
 .welcomemessagemobile {
     position: absolute;
-    top: 42vh;
+    top: 35vh;
     left: 10vw;
     text-shadow:
         -1px -1px 0 #00000058,
@@ -543,11 +576,26 @@ td {
         display: block;
     }
 
-    .hizmeth1{
+    .footer{
         display: none;
     }
 
-    .hizmeth1mobile{
+    .footermobile{
+        display: block;
+    }
+
+    .grid-container {
+        max-width: 90%;
+        max-height: 50vh;
+        margin-bottom: 10vh;
+        grid-template-columns: auto auto
+    }
+
+    .hizmeth1 {
+        display: none;
+    }
+
+    .hizmeth1mobile {
         display: block;
     }
 
@@ -559,23 +607,40 @@ td {
         display: block;
     }
 
-    .maintext1mobile{
+    .maintext1mobile {
         display: block;
     }
 
-    .maintext2mobile{
+    .maintext2mobile {
         display: block;
     }
 
-    .prod1{
+    .prod1 {
         display: none;
     }
 
-    .prod2{
+    .prod2 {
         display: none;
     }
 
-    .prodmobile{
+    .prodmobile {
+        display: block;
+    }
+
+    .slider-container {
+        width: 90%;
+        height: 40vh;
+    }
+
+    .slider img {
+        width: calc(100%);
+    }
+
+    .table{
+        display: none;
+    }
+
+    .tablemobile{
         display: block;
     }
 
