@@ -152,7 +152,9 @@ body {
 .popup-container .popup-box {
     width: 100%;
     height: 100%;
-    background: #ffffff;
+    background-image: url(images/makine.jpg);
+    background-color: rgb(113, 113, 113);
+    background-blend-mode: multiply;
     border: 5px solid rgba(128, 119, 108, 0.329);
     border-radius: 1vw;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
@@ -172,7 +174,7 @@ body {
     margin-top: 6vh;
     width: 6vw;
     height: 5vh;
-    background: #767676;
+    background: #76767672;
     border-radius: 6px;
     border: none;
     outline: none;
@@ -307,6 +309,7 @@ nav.in-view {
 
 .hizmeth1 {
     margin-top: 70vh;
+    font-size: 26pt;
 }
 
 .hizmeth1mobile {
