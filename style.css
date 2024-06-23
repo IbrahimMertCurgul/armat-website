@@ -25,6 +25,24 @@ body {
     padding: 0;
 }
 
+.baslik {
+    position: absolute;
+    background-color: transparent;
+    background-size: cover;
+    color: #fff;
+    justify-content: space-between;
+    height: 20vh;
+}
+.baslikmobile {
+    position: absolute;
+    background-color: black;
+    background-size: cover;
+    color: #fff;
+    justify-content: space-between;
+    height: 10vh;
+    display: none;
+}
+
 .footer {
     background-color: rgb(113, 113, 113);
     background-image: url(images/makine.jpg);
@@ -57,15 +75,6 @@ body {
 
 .grid-container img {
     width: 100%;
-}
-
-header {
-    position: absolute;
-    background-color: transparent;
-    background-size: cover;
-    color: #fff;
-    justify-content: space-between;
-    height: 20vh;
 }
 
 /**************************** İLETİŞİM ***********************************/
@@ -146,8 +155,21 @@ header {
     left: 25vh;
 }
 
+.logomobile {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25vh;
+    left: 50%;
+    display: none;
+}
+
 .logo img {
     width: 30vw;
+    transition: 500ms linear;
+}
+
+.logomobile img {
+    width: 60vw;
     transition: 500ms linear;
 }
 
@@ -169,10 +191,16 @@ main {
     height: auto;
 }
 
-nav {
+.baslik nav {
     position: absolute;
     left: 50vw;
     top: 10vh;
+    transform: translate(-50%, -50%);
+}
+.baslikmobile nav {
+    position: absolute;
+    left: 50vw;
+    top: 8vh;
     transform: translate(-50%, -50%);
 }
 
@@ -192,7 +220,7 @@ nav.in-view {
     animation: navanim 500ms ease;
 }
 
-nav ul {
+.baslik nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -200,12 +228,25 @@ nav ul {
     justify-content: center;
 }
 
-nav ul li {
+.baslikmobile nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.baslik nav ul li {
     width: 10vw;
     margin: 0 20px;
 }
 
-nav ul li a {
+.baslikmobile nav ul li {
+    width: 40vw;
+    margin: 0 2vw;
+}
+
+.baslik nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
@@ -213,7 +254,15 @@ nav ul li a {
     user-select: none;
 }
 
-nav ul li a:hover {
+.baslikmobile nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 200ms linear;
+    user-select: none;
+}
+
+.baslik nav ul li a:hover {
     background-color: #83c1de2f;
     border-radius: 10px;
     padding: 10px;
@@ -331,6 +380,22 @@ td {
     user-select: none;
 }
 
+.Welcomeheadermobile {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40vh;
+    left: 50%;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18pt;
+    font-weight: 400;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.27);
+    text-align: center;
+    color: #fff;
+    user-select: none;
+    display: none;
+}
+
 .welcomemessage {
     position: absolute;
     top: 40vh;
@@ -384,4 +449,24 @@ td {
 }
 
 
-@media (max-width: 768px) {}
+/****************************************** MOBİL ***********************************************/
+@media only screen and (max-width: 768px) {
+    .baslik{
+        display: none;
+    }
+    .baslikmobile{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .logomobile{
+        display: block;
+    }
+    .Welcomeheader{
+        display: none;
+    }
+    .Welcomeheadermobile{
+        display: block;
+    }
+}
