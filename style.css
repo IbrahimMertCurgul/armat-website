@@ -26,6 +26,14 @@ body {
     padding: 0;
 }
 
+h1{
+    font-family: "Inter", sans-serif;
+}
+
+h2{
+    font-family: "Inter", sans-serif;
+}
+
 .baslik {
     position: absolute;
     background-color: transparent;
@@ -79,14 +87,14 @@ body {
 
 .footerelement {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     text-align: left;
     margin-top: 2vh;
 }
 
 .footerelementmobile {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     text-align: left;
     margin-top: 5vh;
 }
@@ -372,7 +380,7 @@ button:hover {
 
 .maintext1mobile {
     position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16pt;
     color: #282828;
     display: none;
@@ -380,7 +388,7 @@ button:hover {
 
 .maintext2mobile {
     position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14pt;
     color: #282828;
     display: none;
@@ -429,7 +437,7 @@ td {
 
 .text {
     position: relative;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 15pt;
     color: #282828;
 }
@@ -466,9 +474,9 @@ td {
     top: 32vh;
     left: 48vw;
     width: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 2.8lvw;
-    font-weight: 100;
+    font-weight: 400;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.27);
     color: #fff;
     text-indent: 50px;
@@ -481,7 +489,7 @@ td {
     top: 30vh;
     left: 50%;
     width: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 18pt;
     font-weight: 400;
     text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.27);
@@ -519,7 +527,7 @@ td {
 .welcomemessage p {
     word-break: normal;
     text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.1lvw;
     color: #fff;
 }
@@ -527,7 +535,7 @@ td {
 .welcomemessagemobile p {
     word-break: normal;
     text-align: left;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 13pt;
     color: #fff;
 }
