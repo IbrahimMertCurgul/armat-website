@@ -65,6 +65,7 @@ h2.in-view {
     width: 140px;
     height: 5vh;
     border: 3px solid rgba(255, 255, 255, 0.9);
+    padding: 20px;
     border-radius: 4px;
     transition: 200ms linear;
     transform: translate(-92%, -50%);
@@ -90,6 +91,7 @@ h2.in-view {
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
+    border-top: 8px solid rgba(255, 255, 255, 0.32);
     height: 25vh;
 }
 
@@ -99,6 +101,7 @@ h2.in-view {
     background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
+    border-top: 10px solid rgba(255, 255, 255, 0.32);
     height: auto;
     padding: 10vw;
     display: none;
@@ -303,7 +306,7 @@ nav.in-view {
 }
 
 .baslik nav ul li a:hover {
-    background-color: #83c1de2f;
+    background-color: #ffffff20;
     border-radius: 10px;
     padding: 10px;
 }
@@ -482,7 +485,6 @@ td {
     transition: 1000ms linear;
     height: 100vh;
     width: auto;
-
 }
 
 .Welcomeheader {
@@ -588,15 +590,10 @@ td {
     animation: welpanim 500ms ease;
 }
 
-
 /****************************************** MOBİL ***********************************************/
 @media only screen and (max-width: 768px) {
     .baslik {
         display: none;
-    }
-
-    .baslikmobile {
-        display: block;
     }
 
     .buton {
