@@ -448,6 +448,12 @@ button:hover {
     }
   }
 
+  @media screen and (max-width: 900px) {
+    .wrapper{
+        max-width: 90%;
+      }
+  }
+
 /*************************SLİDER END*********************/
 
 .mobileh2 {
@@ -478,7 +484,7 @@ button:hover {
 .prod1 {
     position: absolute;
     top: 110vh;
-    left: 65vw;
+    left: 60vw;
 }
 
 .prod2 {
