@@ -660,6 +660,9 @@ td {
 
 /****************************************** MOBİL ***********************************************/
 @media only screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
     .baslik {
         display: none;
     }
