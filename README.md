@@ -16,7 +16,7 @@ Website link: https://www.armatofset.com/
 ![4](https://github.com/IbrahimMertCurgul/armat-website/assets/134641110/a2a3fcd7-7f75-4a66-9ac9-67f6c754cebb)
 <br><br><br><br>
 <center>
-Mobile
+Mobile</center>
 <br><br>
 ![mob1](https://github.com/IbrahimMertCurgul/armat-website/assets/134641110/5e427879-c6d4-4411-86be-c8745c9ca307)
 <br>
@@ -25,4 +25,4 @@ Mobile
 ![mob3](https://github.com/IbrahimMertCurgul/armat-website/assets/134641110/28eaceb7-ae08-448b-a069-698046267a04)
 <br>
 ![mob4](https://github.com/IbrahimMertCurgul/armat-website/assets/134641110/3b648f0a-e6e6-48c6-bbba-6bbef7982da4)
-</center>
+
